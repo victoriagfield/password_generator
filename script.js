@@ -1,12 +1,13 @@
 //Assignment code
 var generateBtn = document.querySelector("#generate");
 
+//function to generate the password with all of the below info
 function generatePassword() {
 
 //Variables for password characters
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var numbChar = (1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+var numbChar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var specialChar = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "+", "-", "/", "-", ":", "<", ">"];
 
 
@@ -26,23 +27,24 @@ var confirmCharacter = confirm("Do you want your password to contain special cha
 var passwordChars = [];
 
 //if statements based on user input
+//confirms uppercase characters
 if(confirmUpperCase) {
   passwordChars = passwordChars.concat(upperCase)
 }
-   
+//confirms lowercase characters  
 if(confirmLowerCase){
   passwordChars = passwordChars.concat(lowerCase)
 }
-
+//confirms numbers
 if(confirmNumber){
   passwordChars = passwordChars.concat(numbChar)
 }
-
+//confirms special characters
 if(confirmCharacter){
   passwordChars = passwordChars.concat(specialChar)
 }
 
-//if statement if users do not meet any of the criteria
+//return section if the user clicks cancel on all criteria 
  if (passwordChars.length == 0) {
   return ("To generate a password you need to choose one of the criteria. Please try again.");
  }
