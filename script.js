@@ -23,7 +23,7 @@ var confirmLowerCase = confirm("Do you want your password to contain lowercase l
 var confirmNumber = confirm("Do you want your password to contain numbers?");
 var confirmCharacter = confirm("Do you want your password to contain special characters?");
 
-//variable for password characters for in statement.
+//variable for password characters for if statement.
 var passwordChars = [];
 
 //if statements based on user input
