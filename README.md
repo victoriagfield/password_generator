@@ -2,13 +2,6 @@
 https://victoriagfield.github.io/password_generator <br>
 <hr>
 
-# Workday Planner
-<br>
-https://victoriagfield.github.io/day_planner
-
-<br>
-<hr>
-
  ## Table of Contents
   - [Description](#Description)
   - [Installation](#Installation)
